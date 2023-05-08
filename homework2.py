@@ -50,6 +50,6 @@ If there are 2 johns in the list, you need to take only one of them.
 '''
 non_unique_names = ['John Dow', 'John Dow', 'Marta Dow']
 unique_names = list(dict.fromkeys(non_unique_names))
-print(unique_names)
+print(f'unique_names: {unique_names}')
 
 
