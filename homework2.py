@@ -40,7 +40,7 @@ Display 2 groups of guests in code.
 '''
 list_vip = ['Tom', 'Loran', 'Woro', 'Sindy']
 list_free = [None, 'Carol', 'Connor', 'Alisia', 'Nata', None, None]
-print(list_free, list_vip)
+print(f'common group {list_free}, vip group {list_vip}')
 
 '''
 You have a group of people with non-unique names. 
