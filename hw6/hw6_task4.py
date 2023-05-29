@@ -10,7 +10,7 @@ def deleting_numbers(file_name):
     for index in data:
         if not index.isdigit():
             new_text = new_text + index
-    with open('qwerty.txt', 'w') as file:
+    with open(file_name, 'w') as file:
         data_to_write_text = file.write(new_text)
 
     return new_text
@@ -27,7 +27,3 @@ if __name__ == '__main__':
     with open('qwerty.txt', 'w') as files:
         files.write(default_text)
     print(deleting_numbers('qwerty.txt'))
-
-
-
-

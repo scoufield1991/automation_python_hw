@@ -7,8 +7,7 @@ def square_counting(side):
     diagonal = pow(side, 0.5)
     perimeter = 4 * side
     area = pow(side, 2)
-    square_tuple = (perimeter, area, diagonal)
-    return square_tuple
+    return perimeter, area, diagonal
 
 
 if __name__ == '__main__':
