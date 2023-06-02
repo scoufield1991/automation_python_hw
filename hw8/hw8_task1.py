@@ -9,7 +9,7 @@ that was called must be displayed in the console with the result.
 
 def print_function_name(func):
     def wrapper(*args, **kwargs):
-        print("Function:", func.__name__)
+        print(f'Function: {func.__name__}')
         return func(*args, **kwargs)
     return wrapper
 

@@ -5,7 +5,7 @@ The solution should work and not freeze your computer.
 
 
 def my_gen():
-    for counter in range(0, 10000000001):
+    for counter in range(0, 10000000001, 2):
         yield counter ** 2
 
 
