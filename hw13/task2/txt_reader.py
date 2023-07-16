@@ -10,8 +10,3 @@ class TxtReader(Reader):
         with open(self.file_path) as file:
             text = file.read()
         return text
-
-    def write_file(self, new_text):
-        with open(self.file_path, 'w') as file:
-            file.write(new_text)
-
