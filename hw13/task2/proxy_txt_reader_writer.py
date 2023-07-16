@@ -22,8 +22,11 @@ class TxtProxyWriterReader(Writer, Reader):
 
     def write(self, text):
         self.__text = text
-        self.__writer.write(text)
-        self.__is_actual = False
+        if self.__text == self.__reader.read_file():
+            self.__reader.read_file()
+        else:
+            self.__writer.write(text)
+            self.__is_actual = False
 
 
 if __name__ == '__main__':
@@ -31,7 +34,10 @@ if __name__ == '__main__':
 
     data = txt_proxy_writer_reader.read_file()
     new_data = txt_proxy_writer_reader.read_file()
-    txt_proxy_writer_reader.write("LOL3")
+    txt_proxy_writer_reader.write("Cool")
+    new_data = txt_proxy_writer_reader.read_file()
+    new_data = txt_proxy_writer_reader.read_file()
+    txt_proxy_writer_reader.write("lol")
     new_data = txt_proxy_writer_reader.read_file()
     new_data = txt_proxy_writer_reader.read_file()
     txt_proxy_writer_reader.write("Cool")
